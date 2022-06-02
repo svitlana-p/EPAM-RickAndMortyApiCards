@@ -1,0 +1,119 @@
+    @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+#root {
+    font-family: 'Satisfy', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#search-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+#search-input {
+    margin: 0 40px;
+    padding-left: 20px;
+    width: 500px;
+    border-radius: 4px;
+    border:1px solid  #f0e549;
+    color: #f06727;
+    font-size: 24px;
+    font-family: 'Satisfy', sans-serif;
+}
+#search-btn,
+.load-more,
+.delete-btn {
+    padding: 0.5em 1em;
+    align-items: center;
+    appearance: none;
+    background-color: #f0e435;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #f0e549 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #d46d3e;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Satisfy', sans-serif;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 24px;
+}
+.load-more {
+    margin: 30px;
+}
+#search-btn:focus,
+.load-more:focus {
+    box-shadow: #f0e549 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+#search-btn:hover,
+.load-more:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #f0e549 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+#search-btn:active,
+.load-more:active {
+    box-shadow: #f0e549 0 3px 7px inset;
+    transform: translateY(2px);
+}
+#root .disabled {
+    box-shadow: none;
+    transform: none;
+}
+#characters-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid rgb(197, 181, 8);
+    border-radius: 8px;
+}
+.character-conteiner {
+    margin:15px 10px;
+    border: 1px solid rgb(185, 175, 65);
+    border-radius: 8px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #5a453b 0 -3px 0 inset;
+    display: flex;
+    flex-direction: column;
+}
+.character-conteiner img {
+    border-radius: 8px;
+    max-width: 220px;
+}
+.text-info {
+    margin: 0;
+    padding: 3px;
+}
+.delete-btn {
+    color: #f0e435;
+    background-color: #d46d3e;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d46d3e 0 -3px 0 inset;
+}
+.delete-btn:active {
+    box-shadow: #d46d3e 0 3px 7px inset;
+    transform: translateY(2px);
+}
+.delete-btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d46d3e 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+.delete-btn:focus {
+    box-shadow: #d46d3e 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+.hidden {
+    display: none;
+}
